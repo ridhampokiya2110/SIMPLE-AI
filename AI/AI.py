@@ -114,6 +114,6 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend ridham bhai. I am not able to send this email")    
+                speak("Sorry my friend ridham. I am not able to send this email")    
         else:
             print("No query matched")
