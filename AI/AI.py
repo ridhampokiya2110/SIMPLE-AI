@@ -30,7 +30,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")       
+    speak("I am jonny. Please tell me how may I help you")       
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -81,8 +81,14 @@ if __name__ == "__main__":
         elif 'open google' in query:
             webbrowser.open("google.com")
 
-        elif 'open stackoverflow' in query:
-            webbrowser.open("stackoverflow.com")   
+        elif 'open linkedin' in query:
+            webbrowser.open("linkedin.com") 
+
+        elif 'open github' in query:
+            webbrowser.open("github.com")
+        
+        elif 'open chatgpt' in query:
+            webbrowser.open("chat.openai.com")
 
 
         elif 'play music' in query:
@@ -96,18 +102,18 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\LENOVO\\OneDrive\\Desktop\\RIDHAM\\python\\AI\\AI.py"
             os.startfile(codePath)
 
-        elif 'email to harry' in query:
+        elif 'email to ridham' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "harryyourEmail@gmail.com"    
+                to = "ridhamyourEmail@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")    
+                speak("Sorry my friend ridham bhai. I am not able to send this email")    
         else:
             print("No query matched")
