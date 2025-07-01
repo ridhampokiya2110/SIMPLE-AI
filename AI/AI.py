@@ -90,6 +90,8 @@ if __name__ == "__main__":
         elif 'open chatgpt' in query:
             webbrowser.open("chat.openai.com")
 
+        elif 'open spotify' in qurey:
+            webbrowser.open("spotify.com")
 
         elif 'play music' in query:
             music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
